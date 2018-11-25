@@ -11,6 +11,10 @@ class Reader
     @house = house
   end
 
+  def to_s
+    name.to_s
+  end
+
   private
 
   def validate(name, email, city, street, house)
