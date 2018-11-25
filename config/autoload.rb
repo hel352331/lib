@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+require 'faker'
 require_relative '../entities/errors_message.rb'
 require_relative '../entities/validator.rb'
 require_relative '../entities/author.rb'
