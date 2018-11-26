@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative './config/autoload.rb'
+require './config/autoload.rb'
 lib = Library.new
 author1 = Author.new(Faker::Book.author)
 author2 = Author.new(Faker::Book.author)
@@ -48,5 +48,3 @@ lib.add(
   order5
 )
 puts order1
-puts reader5
-binding.pry
