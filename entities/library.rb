@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Library
   include ValidatorErrors
   attr_reader :authors, :readers, :orders, :books
@@ -21,15 +23,4 @@ class Library
     end
   end
 
-
-  private
-
-  def data
-    {
-      authors: @authors,
-      books: @books,
-      readers: @readers,
-      orders: @orders
-    }
-  end
 end
