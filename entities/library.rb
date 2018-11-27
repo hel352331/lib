@@ -24,6 +24,16 @@ class Library
     end
   end
 
+  def load_store
+    return unless load
+
+    param = load
+    @books = param[:books]
+    @authors = param[:authors]
+    @orders = param[:orders]
+    @readers = param[:readers]
+  end
+
   def store_data
     save(data)
   end
