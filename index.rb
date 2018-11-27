@@ -48,4 +48,5 @@ lib.add(
   order5
 )
 lib.store_data
-# puts order1
+
+puts lib.most_popular_books(1)

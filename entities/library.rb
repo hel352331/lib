@@ -3,6 +3,7 @@
 class Library
   include Storage
   include ValidatorErrors
+  include Statistics
   attr_reader :authors, :readers, :orders, :books
 
   def initialize
@@ -10,6 +11,7 @@ class Library
     @books = []
     @readers = []
     @orders = []
+    load_store
   end
 
   def add(*data)
@@ -22,6 +24,10 @@ class Library
       else raise UndefinedClassError
       end
     end
+  end
+
+  def show_most_popular_books
+    most_popular_books(@orders)
   end
 
   def load_store
