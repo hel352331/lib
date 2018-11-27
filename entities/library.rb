@@ -31,9 +31,12 @@ class Library
   end
 
   def show_top_reader
-    top_reader(@readers)
+    top_reader(@orders)
   end
 
+  def show_three_tops
+    number_readers_of_popular_books(@orders)
+  end
 
   def load_store
     return unless load

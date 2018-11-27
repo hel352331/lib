@@ -51,3 +51,4 @@ lib.store_data
 
 puts lib.most_popular_books(1)
 puts lib.top_reader(1)
+puts lib.number_readers_of_popular_books(3)
