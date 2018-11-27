@@ -12,5 +12,4 @@ module Statistics
     list = uniq.group_by(&:book).sort_by { |__, order| -order.count }.first(quantity)
     list.map { |book_orders| book_orders.pop.count }
   end
-
 end
