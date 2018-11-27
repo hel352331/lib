@@ -50,3 +50,4 @@ lib.add(
 lib.store_data
 
 puts lib.most_popular_books(1)
+puts lib.top_reader(1)

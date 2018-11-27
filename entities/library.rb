@@ -30,6 +30,11 @@ class Library
     most_popular_books(@orders)
   end
 
+  def show_top_reader
+    top_reader(@readers)
+  end
+
+
   def load_store
     return unless load
 
