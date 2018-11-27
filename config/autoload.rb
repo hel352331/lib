@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
+require 'yaml'
 require 'faker'
-require_relative '../entities/errors_message.rb'
-require_relative '../entities/validator.rb'
+require_relative '../modules/errors_message.rb'
+require_relative '../modules/validator.rb'
+require_relative '../modules/methods.rb'
+require_relative '../modules/storage.rb'
 require_relative '../entities/author.rb'
 require_relative '../entities/reader.rb'
 require_relative '../entities/book.rb'

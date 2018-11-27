@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Library
+  include Storage
   include ValidatorErrors
   attr_reader :authors, :readers, :orders, :books
 
@@ -23,4 +24,18 @@ class Library
     end
   end
 
+  def store_data
+    save(data)
+  end
+
+  private
+
+  def data
+    {
+      authors: @authors,
+      books: @books,
+      readers: @readers,
+      orders: @orders
+    }
+  end
 end

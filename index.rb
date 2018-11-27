@@ -47,4 +47,5 @@ lib.add(
   reader1, reader2, reader3, reader4, reader5, order1, order2, order3, order4,
   order5
 )
-puts order1
+lib.store_data
+# puts order1
