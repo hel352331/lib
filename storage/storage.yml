@@ -1,0 +1,127 @@
+---
+:authors:
+- !ruby/object:Author
+  name: Dana Schmidt
+  biography: Distinctio architecto enim. Velit et officiis. Voluptas soluta quod.
+- !ruby/object:Author
+  name: Miss Serina Kuhic
+  biography: Reprehenderit in ut. Vero consequatur reiciendis. Amet facere deleniti.
+- !ruby/object:Author
+  name: Michaele Senger
+  biography: Velit fugiat omnis. Excepturi ut quos. Aliquam vel laudantium.
+- !ruby/object:Author
+  name: Houston Waelchi PhD
+  biography: Eaque quam doloribus. Repellendus veritatis molestiae. Et sit id.
+:books:
+- !ruby/object:Book
+  title: The Cricket on the Hearth
+  author: !ruby/object:Author
+    name: Cristal Lynch
+    biography: Voluptate et voluptas. Cumque est qui. Dolor temporibus qui.
+- !ruby/object:Book
+  title: Françoise Sagan
+  author: !ruby/object:Author
+    name: Denny Keeling
+    biography: Unde laborum enim. Explicabo consectetur quod. Et qui et.
+- !ruby/object:Book
+  title: Surprised by Joy
+  author: !ruby/object:Author
+    name: Veda Wisozk I
+    biography: Vero totam voluptatibus. Et maiores et. Sed vel labore.
+:readers:
+- !ruby/object:Reader
+  name: Sofia Dare
+  email: dona@schmidt.io
+  city: Port Honghaven
+  street: Christiansen Expressway
+  house: 15001
+- !ruby/object:Reader
+  name: Daryl Abbott
+  email: letitiadubuque@koch.biz
+  city: Durganside
+  street: Eustolia Mission
+  house: 6705
+- !ruby/object:Reader
+  name: Cassi Rodriguez
+  email: kristopher@blickgoodwin.name
+  city: New Halina
+  street: Sanford Locks
+  house: 4094
+- !ruby/object:Reader
+  name: Irvin McClure
+  email: ernestoschaden@halvorson.biz
+  city: Zulaufberg
+  street: Funk Lights
+  house: 3687
+- !ruby/object:Reader
+  name: Lowell Hagenes
+  email: cindie@stokes.io
+  city: North Noah
+  street: Runolfsson Springs
+  house: 22783
+:orders:
+- !ruby/object:Order
+  reader: !ruby/object:Book
+    title: Beyond the Mexique Bay
+    author: !ruby/object:Author
+      name: Chana Cassin Sr.
+      biography: Labore dolorem enim. Cupiditate quidem velit. Et tenetur deleniti.
+  book: !ruby/object:Reader
+    name: Kristie Koss
+    email: patrickmacgyver@schimmel.co
+    city: Lake Mortonberg
+    street: Leeann Field
+    house: 685
+  date: 2018-12-02 17:17:56.538918987 +02:00
+- !ruby/object:Order
+  reader: !ruby/object:Book
+    title: The Soldier's Art
+    author: !ruby/object:Author
+      name: Trena Runolfsson MD
+      biography: Cum eligendi ea. Aut ducimus qui. Et labore molestiae.
+  book: !ruby/object:Reader
+    name: Nilsa Schmidt
+    email: sammydoyle@dare.name
+    city: New Kiphaven
+    street: Horacio Parkway
+    house: 733
+  date: 2018-12-02 17:17:56.566610311 +02:00
+- !ruby/object:Order
+  reader: !ruby/object:Book
+    title: Eyeless in Gaza
+    author: !ruby/object:Author
+      name: Elza Cole
+      biography: Debitis omnis qui. Voluptatem delectus veritatis. Quia error ullam.
+  book: !ruby/object:Reader
+    name: Warren Marquardt
+    email: armandomiller@pollich.info
+    city: Handfurt
+    street: Hedwig Throughway
+    house: 69019
+  date: 2018-12-02 17:17:56.594409585 +02:00
+- !ruby/object:Order
+  reader: !ruby/object:Book
+    title: The House of Mirth
+    author: !ruby/object:Author
+      name: Shelton Orn
+      biography: Blanditiis quos aut. Amet ut aspernatur. Odit et ratione.
+  book: !ruby/object:Reader
+    name: Violeta Schoen
+    email: louella@quigleyboehm.net
+    city: Lake Johnny
+    street: Angelika Trail
+    house: 9658
+  date: 2018-12-02 17:17:56.622981880 +02:00
+- !ruby/object:Order
+  reader: !ruby/object:Book
+    title: That Good Night
+    author: !ruby/object:Author
+      name: Tova Franecki
+      biography: Facilis quo vel. Aut ut ut. Facilis expedita repellat.
+  book: !ruby/object:Reader
+    name: Leonora Huels
+    email: joyemcglynn@hauckward.com
+    city: Lennyburgh
+    street: Daugherty Glen
+    house: 152
+  date: 2018-12-02 17:17:56.652953055 +02:00
