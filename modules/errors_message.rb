@@ -1,15 +1,13 @@
-# frozen_string_literal: true
-
 module ValidatorErrors
   class EmptyStringError < StandardError
-    def initialize
-      super('Empty string')
+    def message
+      'Empty string'
     end
   end
 
   class UndefinedClassError < StandardError
-    def initialize
-      super('Undefined class')
+    def message
+      'Undefined class'
     end
   end
 end

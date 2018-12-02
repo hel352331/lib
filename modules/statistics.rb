@@ -1,15 +1,20 @@
 module Statistics
-  def most_popular_books(quantity = 1)
-    @orders.group_by(&:book).sort_by { |__, order| -order.count }.first(quantity)
+  def most_popular_books(orders, quantity = 1)
+    sort_by(orders, :book, quantity)
   end
 
-  def top_reader(quantity = 1)
-    @orders.group_by(&:reader).sort_by { |__, order| -order.count }.first(quantity)
+  def top_reader(orders, quantity = 1)
+    sort_by(orders, :reader, quantity)
   end
 
-  def number_readers_of_popular_books(quantity = 3)
-    uniq = @orders.uniq { |order| [order.book, order.reader] }
-    list = uniq.group_by(&:book).sort_by { |__, order| -order.count }.first(quantity)
-    list.map { |book_orders| book_orders.pop.count }
+  def number_readers_of_popular_books(orders, quantity = 3)
+    popular_books = most_popular_books(orders, quantity)
+    orders.select { |order| popular_books.include? order.book }.uniq.count
+  end
+
+  private
+
+  def sort_by(orders, by, quantity)
+    orders.group_by(&by).sort_by { |_, order| -order.count }.first(quantity).to_h.keys
   end
 end

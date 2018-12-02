@@ -1,9 +1,9 @@
-# frozen_string_literal: true
-
+require 'pry'
 require 'yaml'
-require 'faker'
-require_relative '../modules/errors_message.rb'
+require 'ffaker'
+require_relative '../entities/generator.rb'
 require_relative '../modules/validator.rb'
+require_relative '../modules/errors_message.rb'
 require_relative '../modules/statistics.rb'
 require_relative '../modules/storage.rb'
 require_relative '../entities/author.rb'

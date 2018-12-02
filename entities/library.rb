@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Library
   include Storage
   include ValidatorErrors
@@ -26,16 +24,16 @@ class Library
     end
   end
 
-  def show_most_popular_books
-    most_popular_books(@orders)
+  def show_most_popular_books(quantity)
+    most_popular_books(@orders, quantity)
   end
 
-  def show_top_reader
-    top_reader(@orders)
+  def show_top_reader(quantity)
+    top_reader(@orders, quantity)
   end
 
-  def show_three_tops
-    number_readers_of_popular_books(@orders)
+  def show_three_tops(quantity)
+    number_readers_of_popular_books(@orders, quantity)
   end
 
   def load_store

@@ -2,7 +2,7 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Metrics/LineLength:
-  Max: 90
+  Max: 120
 
 Style/Documentation:
   Enabled: false
